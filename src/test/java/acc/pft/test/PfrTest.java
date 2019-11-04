@@ -3,14 +3,12 @@ package acc.pft.test;
 import com.codeborne.selenide.Configuration;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static com.codeborne.selenide.WebDriverRunner.url;
@@ -21,7 +19,7 @@ public class PfrTest {
     @Before
     public void setUp() {
         Configuration.startMaximized  = true;
-        Configuration.timeout = 5000;
+       // Configuration.timeout = 5000;
     }
 
     @Test
@@ -47,6 +45,7 @@ public class PfrTest {
         //Выбрать регион: Тверская область
         $("#region").click();
         $("#region > option:nth-child(70)").click();
+        $("#payment_form").click();
         //Проверка реквизита "Получатель платежа"
         $("#group_CITIZEN > table > tbody > tr:nth-child(1) > td.val-opfr")
                 .shouldHave(exactText("УФК по Тверской области (ГУ - Отделение Пенсионного фонда РФ по Тверской области)"));
@@ -82,7 +81,7 @@ public class PfrTest {
 
     @Test
     //Тест-кейс 3: проверка заполнения формы "Формирование платёжных документов"
-    public void fillFormationPaymentDocuments() throws FileNotFoundException {
+    public void fillFormationPaymentDocuments(){
         //open("https://www.pfrf.ru/e" +"services/pay_docs/");
         //установить флаг "Застрахованное лицо"
         // $("#payment_form > div > label:nth-child(2) > input[type=radio]").click();
@@ -102,13 +101,7 @@ public class PfrTest {
         $("#group_CITIZEN > div.hide-on-mobile > input:nth-child(9)").setValue("1").pressEnter();
         //Заполнить поле Сумма платежа
         $("#group_CITIZEN > div.hide-on-mobile > input:nth-child(11)").setValue("5000").pressEnter();
-        //Кнопка Скачать в формате PDF
-       // $("#group_CITIZEN > div.hide-on-mobile > input.blue-button.fr.pdf.btn.btn-primary").click();
-
-       // File statementPdf = $("#group_CITIZEN > div.hide-on-mobile > input.blue-button.fr.pdf.btn.btn-primary").download();
-        //PDF pdf = new PDF(statementPdf);
         }
-
 
 
     @Test
