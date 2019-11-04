@@ -3,10 +3,14 @@ package acc.pft.test;
 import com.codeborne.selenide.Configuration;
 import org.junit.Before;
 import org.junit.Test;
-import java.awt.*;
+import org.openqa.selenium.By;
+
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.byValue;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static com.codeborne.selenide.WebDriverRunner.url;
@@ -16,8 +20,8 @@ public class PfrTest {
 
     @Before
     public void setUp() {
-        // разрешение окна
-        Configuration.browserSize = "1920x1080";
+        Configuration.startMaximized  = true;
+        Configuration.timeout = 5000;
     }
 
     @Test
@@ -66,21 +70,30 @@ public class PfrTest {
                 .shouldHave(exactText("Дополнительные страховые взносы на накопительную пенсию и взносы работодателя в" +
                         " пользу застрахованных лиц, уплачивающих дополнительные страховые взносы на накопительную" +
                         " пенсию, зачисляемые в Пенсионный фонд Российской Федерации"));
+        //hover();
+        //isImage("");
+
+        //$("#group_CITIZEN > table > tbody > tr.button-holder.hide-on-mobile > td > input").click();
+        //sleep(1000);
+        //screenshot("requisite1");
+
     }
 
 
     @Test
     //Тест-кейс 3: проверка заполнения формы "Формирование платёжных документов"
-    public void fillFormationPaymentDocuments() throws AWTException {
+    public void fillFormationPaymentDocuments() throws FileNotFoundException {
         //open("https://www.pfrf.ru/e" +"services/pay_docs/");
         //установить флаг "Застрахованное лицо"
         // $("#payment_form > div > label:nth-child(2) > input[type=radio]").click();
-        refresh();
+       // refresh();
         //установить флаг "Застрахованное лицо"
-        $("#payment_form > div > label:nth-child(2) > input[type=radio]").click();
+       // $("#payment_form > div > label:nth-child(2) > input[type=radio]").click();
         //Выбрать регион: Тверская область
         $("#region").click();
         $("#region > option:nth-child(70)").click();
+
+
         //Заполнить имя
         $("#group_CITIZEN > div.hide-on-mobile > input:nth-child(5)").setValue("ФИО").pressEnter();
         //Заполнить поле Адрес
@@ -90,8 +103,13 @@ public class PfrTest {
         //Заполнить поле Сумма платежа
         $("#group_CITIZEN > div.hide-on-mobile > input:nth-child(11)").setValue("5000").pressEnter();
         //Кнопка Скачать в формате PDF
-        $("#group_CITIZEN > div.hide-on-mobile > input.blue-button.fr.pdf.btn.btn-primary").click();
-    }
+       // $("#group_CITIZEN > div.hide-on-mobile > input.blue-button.fr.pdf.btn.btn-primary").click();
+
+       // File statementPdf = $("#group_CITIZEN > div.hide-on-mobile > input.blue-button.fr.pdf.btn.btn-primary").download();
+        //PDF pdf = new PDF(statementPdf);
+        }
+
+
 
     @Test
     public void snilsError() {
@@ -116,4 +134,5 @@ public class PfrTest {
         error2.equals("Укажите корректный номер СНИЛС");
         close();
     }
+
 }
