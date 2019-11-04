@@ -94,6 +94,7 @@ public class PfrTest {
 
 
     @Test
+    //Тест-кейс 4: проверка ошибки, при заполнении поля СНИЛС некорректным значением
     public void snilsError() {
         //Создать и сохранить список открытых вкладок
         ArrayList<String> tabs = new ArrayList<String>((getWebDriver().getWindowHandles()));
