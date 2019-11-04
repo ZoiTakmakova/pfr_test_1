@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1e91bfb-27e3-4d76-8e09-bf96f9984bca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/acc/pft/test/PfrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/acc/pft/test/PfrTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/acc/pft/test/classic_page_object/PfrPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/acc/pft/test/classic_page_object/PfrTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/acc/pft/test/classic_page_object/SearchResultsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/acc/pft/test/selenide_page_object/GoogleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/acc/pft/test/selenide_page_object/PfrPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/acc/pft/test/selenide_page_object/SearchResultsPage.java" beforeDir="false" />
-    </list>
+    <list default="true" id="f1e91bfb-27e3-4d76-8e09-bf96f9984bca" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +14,7 @@
     <session id="1115778154">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="46" />
+          <entry key="project.closed" value="47" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="5" />
           <entry key="project.open.time.11" value="6" />
@@ -45,14 +34,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="20" />
-          <entry key="java" value="2343" />
+          <entry key="java" value="2349" />
+          <entry key="txt" value="1" />
           <entry key="xml" value="142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2343" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="JAVA" value="2349" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="XML" value="142" />
         </counts>
       </usages-collector>
@@ -89,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/acc/pft/test/PfrTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="438">
-              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+              <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -381,17 +371,19 @@
       <workItem from="1572809223407" duration="1792000" />
       <workItem from="1572811238573" duration="1784000" />
       <workItem from="1572813938955" duration="1798000" />
-      <workItem from="1572869043611" duration="1046000" />
+      <workItem from="1572869043611" duration="1825000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1572870253865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572870253865</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PfrTest - 2019.11.03 at 23h 23m 11s.xml">
-      <configuration name="PfrTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PfrTest - 2019.11.03 at 23h 26m 15s.xml">
-      <configuration name="PfrTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PfrTest - 2019.11.03 at 23h 27m 48s.xml">
       <configuration name="PfrTest" configurationId="JUnit" />
     </history-entry>
@@ -416,9 +408,15 @@
     <history-entry file="PfrTest - 2019.11.04 at 00h 03m 31s.xml">
       <configuration name="PfrTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PfrTest - 2019.11.04 at 15h 21m 59s.xml">
+      <configuration name="PfrTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PfrTest - 2019.11.04 at 15h 22m 52s.xml">
+      <configuration name="PfrTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71169000" />
+    <option name="totallyTimeSpent" value="71948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,7 +440,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28091106" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28091106" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35140997" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,6 +474,8 @@
       <path value="$PROJECT_DIR$/pfr_test" />
       <path value="$PROJECT_DIR$/acc.pfr.test" />
     </ignored-roots>
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -711,7 +711,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/acc/pft/test/PfrTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
